@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创建一个容器</title>
+    <style>
+        .containertest {
+            width: 300px;
+            height: 150px;
+
+            display: flex;
+            /* 默认的排列方向是row */
+            flex-direction: row;
+            /* 反向 */
+            flex-direction: row-reverse;
+            /* 设置多行的容器 */
+            /* 默认是不允许换行的 */
+            flex-wrap: nowrap;
+            /*  */
+            flex-wrap: wrap;
+            /* 简化 */
+            flex-flow: row nowrap;
+            /*默认是行不允许换行*/
+
+            /* 主轴项目的对齐方式 */
+            /* 要有剩余的空间才有意义 */
+            width: 1000px;
+            /* 默认是从起始线开始 */
+            justify-content: start;
+            /* 对齐到终止线 */
+            justify-content: end;
+            /*中间对齐 */
+            justify-content: center;
+            /* 两端对齐 */
+            justify-content: space-between;
+            /* 分散对齐 */
+            justify-content: space-around;
+            /* 平均对齐 */
+            justify-content: space-evenly;
+        }
+
+        /* 这个时候就是子块就会不管是不是行内的都会直接被忽略 */
+        .item {
+            width: 100px;
+            height: 50px;
+            background-color: pink;
+        }
+
+        .item1 {
+            width: 40px;
+            height: 50px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containertest">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item1">5</div>
+    </div>
+
+</body>
+
+</html>

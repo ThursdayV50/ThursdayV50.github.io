@@ -1,0 +1,352 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 87%, .75);
+    font-size: 62.5%;
+    list-style: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+}
+
+a {
+    color: rgb(255, 225, 225, 0.75);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login-box {
+    width: 45rem;
+    height: 45rem;
+    background-color: rgba(255, 255, 255);
+    border-radius: .8rem;
+    backdrop-filter: saturate(180%) blur(20rem);
+    box-shadow: 0 0 .8rem 0 rgba(0, 0, 0, .2);
+    padding: 6rem 5rem;
+    margin: 6rem auto 10rem auto;
+}
+
+.register-box {
+    width: 45rem;
+    height: 60rem;
+    background-color: rgba(255, 255, 255);
+    border-radius: .8rem;
+    backdrop-filter: saturate(180%) blur(20rem);
+    box-shadow: 0 0 .8rem 0 rgba(0, 0, 0, .2);
+    padding: 6rem 5rem;
+    margin: 6rem auto 10rem auto;
+}
+
+
+.div-loge {
+    width: 16.7rem;
+    height: 5.6rem;
+    margin: auto;
+    margin-bottom: 6rem;
+}
+
+.loge {
+    width: 167px;
+    height: 56px;
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+}
+
+/* 身份选择start */
+
+.left {
+    width: 48%;
+    height: 5rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.right {
+    width: 48%;
+    height: 5rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* 设置外部div样式 */
+.tab {
+    width: 100%;
+    height: 5rem;
+    margin: 0 0 1rem 0;
+}
+
+/* 设置菜单栏的样式 */
+.tab_list {
+    height: 5rem;
+    width: 100%;
+    background-color: #FFF;
+}
+
+/* 设置列表的样式 */
+.tab_list li {
+    float: left;
+    height: 5rem;
+    width: 50%;
+    line-height: 5rem;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+}
+
+.current {
+    height: 5rem;
+    background-color: #FFF;
+    border-bottom: .1rem solid #002293;
+    color: #000;
+    display: block;
+}
+
+/* 身份选择end */
+/* 输入框 start*/
+.div-input {
+    width: 100%;
+    height: 5rem;
+    border-radius: .3rem;
+    margin-bottom: 1.5rem;
+}
+
+.div-input input {
+    width: inherit;
+    height: inherit;
+    outline: none;
+    border: .1rem solid hsla(0, 0%, 87%, .75);
+    border-radius: .4rem;
+    text-indent: 1em;
+    font-size: 1.5rem;
+    /* color: hsla(0, 0%, 87%, .75); */
+}
+
+.div-input input:focus {
+    width: inherit;
+    height: inherit;
+    outline: none;
+}
+
+.div-phonenum {
+    display: flex;
+}
+
+.div-phonenum-input {
+    width: 100%;
+    height: 5rem;
+    border-radius: .3rem;
+    margin-bottom: 1.5rem;
+}
+
+.div-phonenum-input input {
+    width: inherit;
+    height: inherit;
+    outline: none;
+    border: .1rem solid hsla(0, 0%, 87%, .75);
+    border-radius: .4rem;
+    text-indent: 1em;
+    font-size: 1.5rem;
+}
+
+
+.btn {
+    width: 100%;
+    height: 4rem;
+    background-color: #002293;
+    color: #FFF;
+    border: .1rem solid hsla(0, 0%, 87%, .75);
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.btn:hover {
+    width: 100%;
+    height: 4rem;
+    background-color: #FFF;
+    color: #002293;
+    border-radius: 0.5rem;
+    transition: all .5s ease;
+}
+
+/* 页面角落的转跳start */
+.forgetpassword-register {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forgetpassword-register div a {
+    color: #002293;
+}
+
+.forgetpassword-register div a:hover {
+    color: #FAB536;
+    transition: all .5s ease;
+}
+
+.tologin {
+    text-align: center;
+}
+
+.tologin div a {
+    color: #002293;
+}
+
+.tologin div a:hover {
+    color: #FAB536;
+    transition: all .5s ease;
+}
+
+
+
+/* 页面转跳end */
+/* 下拉框的模拟 start*/
+.hide {
+    display: none;
+}
+
+/* 模拟下拉框 */
+.select-box {
+    position: relative;
+    margin: 0;
+}
+
+.select-box .select-input {
+    line-height: 2rem;
+    border: .1rem solid #d6d6d6;
+    cursor: pointer;
+    width: 10rem;
+    height: 5rem;
+    border: .1rem solid transparent;
+    outline: none;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    text-indent: 2rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgba(34, 34, 34, 1);
+    line-height: 2.2rem;
+    margin: 0;
+    background: rgba(247, 247, 247, 1) url('../login-register-img/arrow-down.png') no-repeat scroll 75px center;
+    background-size: 2rem 2rem;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+/** input placeholder颜色改变 **/
+.select-box .select-input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: rgba(187, 187, 187, 1);
+}
+
+.select-box .select-input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: rgba(187, 187, 187, 1);
+}
+
+.select-box .select-input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: rgba(187, 187, 187, 1);
+}
+
+.select-box .select-input:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: rgba(187, 187, 187, 1);
+}
+
+.select-box .select-input.isActive {
+    background-color: #ffffff;
+    border: .1rem solid rgba(204, 204, 204, 1);
+    background-image: url(../login-register-img/arrow-up.png);
+}
+
+.select-box .options-box {
+    position: absolute;
+    top: 5.5rem;
+    left: 0;
+    width: 100rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 17rem;
+    height: 22.5rem;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+    border-radius: .5rem;
+}
+
+.select-box .options-box li {
+    width: inherit;
+    height: 4.5rem;
+    text-indent: 1rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgba(34, 34, 34, 1);
+    line-height: 4.5rem;
+    background: rgba(255, 255, 255, 1);
+}
+
+.select-box .options-box li.active {
+    background-color: rgba(247, 247, 247, 1);
+    color: #002293
+}
+
+/* 模拟下拉框end */
+
+/* 适配移动端 start*/
+@media (max-width: 768px) {
+    .login-box {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(255, 255, 255);
+        border-radius: .8rem;
+        backdrop-filter: saturate(180%) blur(20rem);
+        box-shadow: 0 0 .8rem 0 rgba(0, 0, 0, .2);
+        padding: 6rem 5rem;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .register-box {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(255, 255, 255);
+        border-radius: .8rem;
+        backdrop-filter: saturate(180%) blur(20rem);
+        box-shadow: 0 0 .8rem 0 rgba(0, 0, 0, .2);
+        padding: 6rem 5rem;
+        margin: 0;
+    }
+}
+
+/* 移动端适配end */

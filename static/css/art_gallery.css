@@ -1,0 +1,11 @@
+.waterfall {
+
+    column-width: 200px;
+    column-gap: 2px;
+
+}
+
+.waterfall img {
+    width: 100%;
+
+}
